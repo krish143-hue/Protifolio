@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Stylish Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<body>
+<header>
+  <h1>My Portfolio</h1>
+  <nav>
+    <a href="https://drive.google.com/file/d/1U0CW6vgiQcspJtybztcN17DZCzAO4riw/view?usp=sharing" target="_blank">Resume</a>
+    <button onclick="goToLanding()">Quit</button>
+  </nav>
+</header>
+
+<div id="landing" class="fade-in">
+  <img src="https://avatars.githubusercontent.com/u/199496069?s=400&u=89b684f076fc6d7bc60a2d8f1f877c8c01e8c2e6&v=4" alt="Your Photo">
+  <h1>Welcome to My Portfolio</h1>
+  <button onclick="showMainContent()">View Portfolio</button>
+</div>
+
+<div id="mainContent" class="hidden">
+  <div class="account-container">
+    <div class="account-info">
+      <img src="https://avatars.githubusercontent.com/u/199496069?s=400&u=89b684f076fc6d7bc60a2d8f1f877c8c01e8c2e6&v=4" alt="Your Image">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/geetha-krishna-515a03251" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/krish143-hue" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:geethakrishnameesala@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="about-text justified-text">
+      <p>
+        A passionate Computer Science undergraduate aspiring to make an impact through innovation and technology.<br>
+        From AI-powered projects to business-focused solutions, I love turning ideas into smart, scalable applications.<br>
+        Explore my portfolio to see how I blend creativity, logic, and purpose into every project I build.
+      </p>
+    </div>
+  </div>
+
+  <div class="option-buttons">
+    <button onclick="showSection('personal')">Personal Details</button>
+    <button onclick="showSection('about')">About Me</button>
+    <button onclick="showSection('skills')">Skills</button>
+    <button onclick="showSection('work')">Work Experience</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('certifications')">Certifications</button>
+    <button onclick="showSection('extra')">Extracurricular Activities</button>
+    <button onclick="showSection('declaration')">Declaration</button>
+  </div>
+  <div id="sectionDisplay"></div>
+</div>
